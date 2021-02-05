@@ -1,0 +1,152 @@
+.header{
+	height: 90px;
+	&-inner{
+		@include site-width;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+
+		@include respond-to(mobiles){
+			margin: 0 5%;
+		}
+	}
+	&-logo{
+		display: flex;
+		align-items: center;
+	}
+	&-menu{
+		@include respond-to(mobiles){
+			width: 58px;
+			height: 44px;
+			background: url(../img/menu.png);
+			margin-top: 10px;
+		}
+	}
+	&-list{
+		display: flex;
+		align-items: center;
+
+		@include respond-to(mobiles){
+			flex-flow: column wrap;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 100%;
+			width: 71%;
+			padding: 60px 20px 0;
+			border-left: 2px solid #5094f2;
+			background: #fff;
+			transition: all 1s linear;
+			z-index: 1;
+		}
+	}
+	&-item{
+		@include respond-to(tablet){
+			margin-top: 17px;
+		}
+		@include respond-to(mobiles){
+				width: 100%;
+				text-align: center;
+			}
+
+	}
+	&-link{
+		font-size: 20px;
+		font-weight: 300;
+		color: #6c6c6c;
+		margin-left: 35px;
+
+		@include respond-to(tablet){
+			margin-left: 20px;
+		}
+		@include respond-to(mobiles){
+			font-size: 30px;
+			margin-left: 0px;
+			margin-bottom: 20px;
+			width: 100%;
+			border-bottom: 2px solid #5094f2;
+			display: block;
+		}
+		&:hover{
+			padding-bottom: 28px;
+			border-bottom: 3px solid #5094f2;
+
+			@include respond-to(mobiles){
+				display: none;
+			}
+		}
+	}
+}
+
+.logo{
+	&-name{
+		font-size: 42px;
+		font-weight: 100;
+		color: #000;
+		margin-left: 15px;
+
+		@include respond-to(mobiles){
+			font-size: 49px;
+		}
+	}
+	&-img{
+		width: 44px;
+		height: 44px;
+
+		@include respond-to(mobiles){
+			width: 55px;
+			height: 55px;
+		}
+	}
+	
+}
+
+.menu{
+	display: none;
+}
+.menu:checked ~ .header-menu{
+	opacity: 0;
+}
+.menu:checked ~ .header-list{
+	left: 29%;
+}
+.bg-menu{
+	display: none;
+
+	@include respond-to(mobiles){
+		display: inline-block;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 130%;
+		width: 30%;
+		background: rgba(0, 0, 0, 0.5);
+		transition: all 1.5s linear;
+		z-index: 1;
+	}
+}
+.menu:checked ~ .bg-menu{
+	left: 0;
+}
+.close{
+	display: none;
+	@include respond-to(mobiles){
+		display: inline-block;
+		position: absolute;
+		top: 25px;
+		right: 20px;
+		font-weight: bold;
+		background: #5094f2;
+		border-radius: 2px;
+		width: 26px;
+		height: 26px;
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+		line-height: 24px;
+	}
+}

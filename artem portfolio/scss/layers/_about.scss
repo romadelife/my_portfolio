@@ -1,0 +1,24 @@
+.about{
+	@include respond-to(tablet){
+		width: 100%;
+		display: block;
+	}
+	&-container{
+		background: #000;
+		border-radius: 20px;
+		margin-bottom: 50px;
+		padding: 26px;
+
+		@include respond-to(tablet){
+
+		}
+	}
+	&-content{
+		font-size: 18px;
+		font-weight: 500;
+		color: #fff;
+		@include respond-to(tablet){
+				display: block;
+			}
+	}
+}

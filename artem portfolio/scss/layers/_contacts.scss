@@ -1,0 +1,23 @@
+.contacts{
+	height: 100vh;
+	&-inner{
+		@include site-width;
+		margin-top: 90px;
+	}
+	&-container{
+		background: #000;
+		border-radius: 20px;
+		padding: 15px 0 15px 25px;
+		display: block;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	&-link{
+		font-size: 25px;
+		color: #fff;
+		display: inline-block;
+		position: absolute;
+		top: 30%;
+		left: 75px;
+	}
+}

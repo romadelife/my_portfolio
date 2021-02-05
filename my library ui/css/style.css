@@ -1,0 +1,150 @@
+/*Переключатель "switcher-classic"*/
+/*Фоновый элемент*/
+.switch{
+	position: relative;
+	width: 100px;
+	background: rgba(100, 100, 100, 0.15);
+	height: 48px;
+	border-radius: 25px;
+	cursor: pointer;
+	margin-bottom: 50px;
+}
+/*Прячемм checkbox*/
+.input{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	cursor: pointer;
+}
+/*Рисуем шарик*/
+.circle{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	/*Размеры*/
+	width: 38px;
+	height: 38px;
+	margin: 5px;
+	z-index: 2;
+	background: #000; /*Цвет шарика*/
+	border-radius: 50%;
+	opacity: 0.4; /*Прозрачность*/
+	box-shadow: 0px 10px 20px 0px rgba(50, 50, 50, .35); 
+	transition: all .25s ease; /*Анимация*/
+}
+.switch:hover{
+	background: rgba(100, 100, 100, 0.25);
+}
+.switch:active .circle{
+	width: 50px;
+}
+.input:checked ~ .circle{
+	left: 52px;
+	opacity: 1;
+}
+.switch:active .input:checked ~ .circle{
+	left: 40px;
+}
+/*Кнопка с волной от клика*/
+.btn-1{
+	width: 220px;
+	height: 60px;
+	position: absolute;
+	outline: none;
+	color: #fff;
+	background: #000;
+	font-size: 20px;
+	letter-spacing: 2px;
+	border-radius: 50px;
+	cursor: pointer;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+span{
+	position: absolute;
+	background: #fff;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	pointer-events: none;
+	animation: animate 1s linear infinite;
+}
+@keyframes animate {
+	0%{
+		width: 0px;
+		height: 0px;
+		opacity: 0.7;
+	}
+	100%{
+		width: 500px;
+		height: 500px;
+		opacity: 0;
+	}
+}
+/*Бургер для мобильного*/
+.container{
+	display: block;
+	position: absolute;
+	top: 30%;
+	left: 8%;
+	transform: translate(-50%, -50%);
+	width: 40px;
+	height: 32px;
+	cursor: pointer;
+}
+.stick, .stick:before, .stick:after{
+	width: 40px;
+	height: 5px;
+	background: #000;
+	top: 50%;
+	position: absolute;
+	transition: all 0.6s;
+	border-radius: 5px;
+}
+.stick:before{
+	content:"";
+	top: -16px;
+	left: 0px;
+}
+.stick:after{
+	content:"";
+	top: 16px;
+	left: 0px;
+}
+.stick.open{
+	transform: translateX(-50px);
+	background: transparent;
+}
+.stick.open:after{
+	transform: rotate(-45deg) translate(50px, 28px);
+}
+.stick.open:before{
+	transform: rotate(45deg) translate(50px, -28px);
+}
+
+/*Анимация кредитной карты */
+.card{
+	margin-top: 400px;
+
+	width: 370px;
+	height: 200px;
+	position: relative;
+	perspective: 1000px
+}
+div[class^="card-"]{
+	position: absolute;
+	transition: all 1.5s ease;
+}
+.card-back{
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+.card:hover .card-front{
+	transform: rotateY(180deg);
+}
+.card:hover .card-back{
+	transform: rotateY(360deg);
+}

@@ -1,0 +1,249 @@
+Reset*/
+*, *::after, *::before{
+	box-sizing: border-box;
+	outline: none;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, li, button{
+	margin: 0;
+	padding: 0;
+}
+ul, li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-family: GothamPro, sans-serif;
+}
+.main-content{
+	background: url(../img/main-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+}
+.header{
+	display: flex;
+	width: 940px;
+	margin: 0 auto;
+	justify-content: space-between;
+	padding-top: 25px;
+}
+.logo-link{
+	display: flex;
+	width: 150px;
+	flex-direction: row;
+
+}
+.logo-name{
+	font-size: 24px;
+	line-height: 70px;
+	color: #fff;
+	margin-left: 15px;
+}
+.nav-list{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.nav-link{
+	font-size: 16px;
+	line-height: 70px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: 50px;
+}
+.nav-link:hover{
+	font-size: 16px;
+	line-height: 70px;
+	text-transform: uppercase;
+	color: #fc635e;
+	border-bottom:5px solid #fc635e;
+}
+
+.banner{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	height: 695px;
+	background: url(../img/mouse.png) no-repeat 835px 360px;
+}
+.banner-header{
+	font-size: 51px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 190px;
+}
+.banner-header::after{
+	content: "";
+	display: inline-block;
+	position: relative;
+	left: 10px;
+	bottom: 15px;
+	background: #7d7d79;
+	width: 107px;
+	height: 8px;
+}
+.banner-header::before{
+	content: "";
+	display: inline-block;
+	position: relative;
+	right: 10px;
+	bottom: 15px;
+	background: #7d7d79;
+	width: 107px;
+	height: 8px;
+}
+.banner-header span{
+	color: #fc635e;
+}
+.banner-sub-header{
+	font-size: 24px;
+	color: #fff;
+	font-weight: 100;
+	margin: 25px 0;
+}
+.banner-btn{
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 55px;
+	background: transparent;
+	border: 2px solid #fc635e;
+	border-radius: 5px;
+	color: #fc635e;
+	padding: 0 35px;
+	margin-top: 20px;
+}
+.banner-btn:hover{
+	background: #fc635e;
+	color: #fff;
+}
+.next-link{
+	position: relative;
+	top: 230px;
+	width: 30px;
+	height: 30px;
+	margin-bottom: 20px;
+	background: url(../img/next.png) no-repeat center;
+}
+.next-link:hover{
+	background: url(../img/next-active.png) no-repeat center;
+}
+
+.features{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+.features-header{
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 50px;
+	color: #868686;
+	margin-top: 85px;
+}
+.features-header span{
+	color: #fc635e;
+}
+.features-header::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #adadad;
+}
+.features-header-sub{
+	font-size: 20px;
+	font-weight: 100;
+	color: #adadad;
+	text-align: center;
+	margin-top: 20px;
+}
+.features-list{
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+.features-item{
+	display: inline-block;
+	width: 22%;
+	text-align: center;
+	padding-top: 110px;
+	margin-top: 80px;
+}
+.clients{
+	background: url(../img/rocket.png) no-repeat center top;
+}
+.branding{
+	background: url(../img/computer.png) no-repeat center top;
+}
+.marketing{
+	background: url(../img/marketing.png) no-repeat center top;
+}
+.adv{
+	background: url(../img/adv.png) no-repeat center top;
+}
+.features-item-header{
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #868686;
+	line-height: 60px;
+}
+.features-item-header::after{
+	content:"";
+	display: block;
+	position: relative;
+	left: 80px;
+	height: 1px;
+	width: 60px;
+	background: #adadad;
+}
+.features-item-header-sub{
+	color: #adadad;
+	height: 50px;
+	overflow: scroll;
+	margin: 20px 0 80px;
+}
+.next-link1{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	margin-bottom: 20px;
+	background: url(../img/next.png) no-repeat center;
+}
+.next-link1:hover{
+	background: url(../img/next-active.png) no-repeat center;
+}
+.proposal{
+	text-align: center;
+	background: url(../img/bg-2.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 90px 160px;
+}
+.proposal-box{
+	border: 8px solid rgba(173, 173, 173, 0.5);
+	padding: 125px 0 100px;
+}
+.proposal-header{
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 15px;
+}
+.proposal-header span{
+	color: #fc635e;
+}
+.next-link2{
+	display: block;
+	position: relative;
+	top: 90px;
+	left: 545px;
+	width: 30px;
+	height: 30px;
+	margin-bottom: 20px;
+	background: url(../img/next.png) no-repeat center;
+}
+.next-link2:hover{
+	background: url(../img/next-active.png) no-repeat center;
+}

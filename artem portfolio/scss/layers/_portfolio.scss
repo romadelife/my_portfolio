@@ -1,0 +1,41 @@
+.portfolio{
+	&-content{
+		@include site-width;
+		margin-top: 90px;
+		margin-bottom: 120px;
+		overflow: hidden;
+		display: inline-block;
+	}
+	&-container{
+		background: #000;
+		border-radius: 20px;
+		padding: 26px 0;
+		min-height: 400px;
+		margin: 15px 0;
+		display: inline-block;
+		overflow: hidden;
+		width: 100%;
+	}
+	&-video{
+		margin-bottom: 25px;
+		text-align: center;
+	}
+	&-text{
+		margin: 0 26px;
+	}
+	&-title{
+		font-size: 20px;
+		font-weight: bold;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+	&-description{
+		font-size: 16px;
+		font-weight: bold;
+		color: #fff;
+	}
+}
+
+.last{
+	// margin-bottom: 150px;
+}

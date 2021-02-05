@@ -1,0 +1,60 @@
+.best{
+	margin-bottom: 60px;
+	overflow: hidden;	
+	&slider{
+		@include respond-to(tablet){
+			margin: 0 auto 60px;
+		}
+	}
+	&-container{
+		background: #000;
+		border-radius: 20px;
+		padding: 26px 0;
+		min-height: 400px;
+		overflow: hidden;
+		margin: 0 15px;
+		outline:none;
+		// max-width: 384px;
+		@include respond-to(tablet){
+
+		}
+	}
+	&-video{
+		margin-bottom: 25px;
+		text-align: center;
+	}
+	&-text{
+		margin: 0 26px;
+
+		@include respond-to(tablet){
+			margin: 0 40px;
+		}
+	}
+	&-title{
+		font-size: 20px;
+		font-weight: bold;
+		color: #fff;
+		margin-bottom: 15px;
+
+			@include respond-to(tablet){
+				font-size: 25px;
+			}
+	}
+	&-description{
+		font-size: 16px;
+		font-weight: bold;
+		color: #fff;
+
+		@include respond-to(tablet){
+			font-size: 20px;
+		}
+	}
+}
+
+.video{
+	&-mobile{
+		@include respond-to(tablet){
+			display: none;
+		}
+	}
+}

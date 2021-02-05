@@ -1,0 +1,85 @@
+.footer{
+	background: url(../img/footer-bg.jpg) center;
+	padding-top: 80px;
+}
+.contacts{
+	display: flex;
+	justify-content: flex-start;
+	&-info{
+		width: 245px;
+		margin-right: 40px;
+		&-header{
+			font-size: 14px;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: #919191;
+			margin-bottom: 10px;
+		}
+		&-sub{
+			font-size: 12px;
+			color: #474747;
+		}
+	}
+	&-twit{
+		width: 245px;
+		margin-right: 40px;
+		&-header{
+			font-size: 14px;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: #919191;
+			margin-bottom: 10px;
+		}
+		&-sub{
+			font-size: 12px;
+			color: #474747;
+			strong{
+				color: #5c5c5c;
+			}
+		}
+	}
+	&-social{
+		width: 245px;
+		&-header{
+			font-size: 14px;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: #919191;
+			margin-bottom: 10px;
+		}
+		&-sub{
+			font-size: 12px;
+			color: #474747;
+		}
+	}
+}
+.fut-link{
+	display: flex;
+	justify-content: flex-start;
+}
+.copyright{
+	background: #131313;
+	padding: 10px 0;
+	height: 70px;
+	.site-width{
+		position: relative;
+	}
+	&-text{
+		display: inline-block;
+		font-size: 12px;
+		color: #424242;
+		line-height: 60px;
+	}
+	&-link{
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		height: 45px;
+		width: 45px;
+		background: #1b1a1b url(../img/arrow.png) no-repeat center;
+		border:1px solid #272727;
+		border-radius: 3px;
+	}
+}
+.icon-behance:before{
+}

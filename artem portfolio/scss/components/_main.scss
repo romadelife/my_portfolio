@@ -1,0 +1,66 @@
+.appeal{
+	&-wrap{
+		padding: 5px 10px;
+		background: #fff;
+		border-radius: 20px;
+		margin-bottom: 30px;
+		width: max-content;
+		position: relative;
+		margin-left: 16px;
+		opacity: 0;
+		animation: fade_left 2s 1s forwards;
+
+		@include respond-to(tablet){
+			padding: 10px 15px;
+		}
+		&:after{
+			content:"";
+			display: block;
+			position: absolute;
+			border:16px solid transparent;
+			border-bottom-color: #fff;
+			font-size: 0;
+			bottom: 0;
+			left: -13px;
+		}	
+	}
+	&-content{
+		font-size: 35px;
+		font-weight: bold;
+
+		@include respond-to(tablet){
+			font-size: 40px;
+		}
+	}
+}
+.messages{
+	margin-top: 135px;
+
+	@include respond-to(tablet){
+		margin-top: 170px;
+	}
+}
+.swipe{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	animation: ripple 2s infinite alternate;
+}
+
+.title-wrap{
+	background: #fff;
+	padding: 5px 15px;
+	box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	width: max-content;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	margin-top: 15px;
+}
+.title{
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+

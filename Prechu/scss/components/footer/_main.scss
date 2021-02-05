@@ -1,0 +1,21 @@
+.footer{
+	border-top: 1px solid #e5e5e5;
+	&-inner{
+		@include site-width;
+		padding: 35px 0 48px;
+
+		@include respond-to(tablet){
+			padding: 25px 0 30px;	
+		}	
+	}
+	&-copyright{
+		font-size: 15px;
+		font-weight: 300;
+		color: #909090;
+		text-align: center;
+
+		@include respond-to(tablet){
+			font-size: 13px;	
+		}	
+	}
+}

@@ -1,0 +1,48 @@
+body{
+	background:#fff url(../img/bg.jpg) ;
+}
+.form{
+	display: inline-block;
+	border: solid 1px #cfdede;
+	padding: 0px 35px;
+	margin-top: 100px;
+	width: 320px;
+	height: 390px; 
+	background-color: #fff;
+}
+.form .header{
+	color: #fff;
+	background-color: #01b3b3;
+	box-shadow: 1.5px 1.5px 3px rgba(0,0,0,0.5);
+	display: inline-block;
+	padding: 10px 10px;
+	margin-bottom: 35px;
+	margin-top:-15px; 
+	line-height: 10px;
+	text-transform: uppercase;
+}
+.form input{
+	margin-bottom: 20px;
+ background:#fff url(../img/bg.jpg);
+ border-radius: 1px;
+ border-color: #cfdede;
+}
+
+.form p{
+	font-size: 12px;
+font-weight: 900;
+}
+.form span{
+	color: #01b3b3;
+}
+.form button{
+	background-color: #01b3b3;
+	color: #fff;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-top: 35px;
+	height: 45px
+}
+
+

@@ -1,0 +1,27 @@
+@keyframes ripple {
+	from{
+		transform:translate(-50%, 50%);
+	}
+	to{
+		transform:translate(-50%, 15%);
+	}
+}
+
+@keyframes fade_left {
+	from{
+		transform: translateX(-400px);
+		opacity: 0.2;
+	}
+	to{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes header-show {
+	from{
+		top: -70px;
+	}
+	to{
+		top: 20px;
+	}
+}

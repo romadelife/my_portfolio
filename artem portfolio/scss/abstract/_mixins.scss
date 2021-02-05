@@ -1,0 +1,47 @@
+@mixin site-width($width: $global-width) {
+    max-width: $width;
+    margin: 0 4%;
+}    
+
+
+@mixin respond-to($device) {
+    /* 320px - 480px */
+    // @if $device == mobile-portrait {
+    //     @media (min-width: $mobile-portrait) and (max-width: $mobile-landscape - 1) {
+    //         @content;
+    //     }
+    // }
+
+    // /* 480px - 767 px */
+    // @if $device == mobile-landscape {
+    //     @media (min-width: $mobile-landscape) and (max-width: $tablet - 1) {
+    //         @content;
+    //     }
+    // }
+
+    // /* 320px - 767 px */
+    // @if $device == mobiles {
+    //     @media (min-width: $mobile-portrait) and (max-width: $tablet - 1) {
+    //         @content;
+    //     }
+    // }
+
+    /* 768px - 1019px */
+    @if $device == tablet {
+        @media (min-width: $global-width) and (max-width: $tablet + 1) {
+            @content;
+        }
+    }
+
+    /* 320px - 1019px */
+    @if $device == laptop_s {
+        @media (min-width: $tablet) and (max-width: $laptop-s - 1) {
+            @content;
+        }
+    }
+    @if $device == laptop_l {
+        @media (min-width: $laptop-s) and (max-width: $laptop_l - 1) {
+            @content;
+        }
+    }
+}

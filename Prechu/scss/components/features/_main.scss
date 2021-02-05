@@ -1,0 +1,142 @@
+.features{
+	position: relative;
+	&-inner{
+		@include site-width;
+
+		padding: 55px 0;
+
+		@include respond-to(mobiles){
+			margin: 0;
+		}
+	}
+	&-imposition{
+		width: 100%;
+		position: absolute;
+		top: -10px;
+		left: 0;
+
+		@include respond-to(tablet){
+			top: -5px;
+		}
+		@include respond-to(mobiles){
+			display: none;
+		}
+	}
+	&-list{
+		display: flex;
+		justify-content: space-between;
+
+		@include respond-to(mobiles){
+			flex-flow: column wrap;
+		}
+	}
+	&-item{
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		padding-top: 220px;
+
+		@include respond-to(tablet){
+			width: calc(100% / 3);
+			padding-top: 170px;
+		}
+		@include respond-to(mobiles){
+			width: 100%;
+			display: inline-block;
+			padding-top: 50px;
+			padding-left: 215px;
+			padding-bottom: 40px;
+			border-bottom: 1px solid #000;
+		}
+		@include respond-to(mobile-portrait){
+			padding-left: 195px;
+		}
+	}
+	&-title{
+		font-size: 20px;
+		font-weight: 300;
+		color: #5094f2;
+		text-align: center;
+		margin-bottom: 10px;
+
+		@include respond-to(tablet){
+			font-size: 15px;
+			width: 100%;
+		}
+		@include respond-to(mobiles){
+			font-size: 34px;
+		}
+		@include respond-to(mobile-portrait){
+			font-size: 22px;
+		}
+
+	}
+	&-description{
+		font-size: 14px;
+		font-weight: 100;
+		color: #909090;
+		width: 250px;
+		text-align: center;
+
+		@include respond-to(tablet){
+			font-size: 12px;
+			width: 100%;
+		}
+		@include respond-to(mobiles){
+			text-align: left;
+			font-size: 19px;
+			display: inline-block;
+			width: 100%;
+		}
+		@include respond-to(mobile-portrait){
+			font-size: 13px;
+			width: 90%;
+		}
+	}
+}
+
+// features icons
+.icon{
+	&-1{
+		background: url(../img/features-icon-1.png) no-repeat top center;
+
+		@include respond-to(tablet){
+			background-size: 150px 150px;
+		}
+		@include respond-to(mobiles){
+			background-position: 10% 50%;
+			background-size: 140px 140px;
+		}
+		@include respond-to(mobile-portrait){
+			background-size: 120px 120px;
+		}
+	}
+	&-2{
+		background: url(../img/features-icon-2.png) no-repeat top center;
+
+		@include respond-to(tablet){
+			background-size: 150px 150px;
+		}
+		@include respond-to(mobiles){
+			background-position: 10% 50%;
+			background-size: 140px 140px;
+		}
+		@include respond-to(mobile-portrait){
+			background-size: 120px 120px;
+		}
+	}
+	&-3{
+		background: url(../img/features-icon-3.png) no-repeat top center;
+
+		@include respond-to(tablet){
+			background-size: 150px 150px;
+		}
+		@include respond-to(mobiles){
+			background-position: 10% 50%;
+			background-size: 140px 140px;
+		}
+		@include respond-to(mobile-portrait){
+			background-size: 120px 120px;
+		}
+	}
+}

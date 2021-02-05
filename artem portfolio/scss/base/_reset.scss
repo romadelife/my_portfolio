@@ -1,0 +1,18 @@
+/*Reset*/
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, li, header, footer, div{
+	margin: 0;
+	padding: 0;
+}
+ul, li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+}

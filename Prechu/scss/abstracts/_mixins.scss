@@ -1,0 +1,47 @@
+@mixin site-width($width: $global-site-width){
+    max-width: $width;
+    margin: 0 11%;
+}
+
+@mixin respond-to($device) {
+    /* 320px - 480px */
+    @if $device == mobile-portrait {
+        @media only screen and (min-width: $mobile-portrait) and (max-width: $mobile-landscape - 1) {
+            @content;
+        }
+    }
+
+    /* 480px - 767 px */
+    @if $device == mobile-landscape {
+        @media only screen and (min-width: $mobile-landscape) and (max-width: $tablet - 1) {
+            @content;
+        }
+    }
+
+    /* 320px - 767 px */
+    @if $device == mobiles {
+        @media only screen and (min-width: $mobile-portrait) and (max-width: $tablet - 1) {
+            @content;
+        }
+    }
+
+    /* 768px - 1019px */
+    @if $device == tablet {
+        @media only screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+            @content;
+        }
+    }
+    /* 1024px - 1250px */
+    @if $device == laptop {
+        @media only screen and (min-width: $laptop) and (max-width: $desktop - 1) {
+            @content;
+        }
+    }    
+
+    /* 320px - 1019px */
+    @if $device == devices {
+        @media only screen and (min-width: $mobile-portrait) and (max-width: $desktop - 1) {
+            @content;
+        }
+    }
+}

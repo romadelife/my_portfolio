@@ -1,0 +1,46 @@
+// abstracts components
+@import "abstract/variables";
+@import "abstract/mixins";
+
+// base components
+@import "base/reset";
+@import "base/animation";
+@import "base/fonts";
+
+
+// components of site
+@import "components/main";
+
+
+// layers components
+@import "layers/header";
+@import "layers/about";
+@import "layers/best";
+@import "layers/clients";
+@import "layers/footer";
+@import "layers/contacts";
+@import "layers/portfolio";
+
+
+
+
+.container{
+	background: url(../img/main-bg.jpg) no-repeat center/cover;
+	height: 100vh;
+	margin-bottom: 50px;
+	position: relative;
+	&-inner{
+		@include site-width;
+		padding-top: 20px;
+	}
+}
+
+.site-content{
+	@include site-width;
+	overflow: hidden;
+
+	@include respond-to(tablet){
+		width: $tablet;
+	}
+}
+
